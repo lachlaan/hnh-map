@@ -7,8 +7,8 @@ function detectType(name) {
     if (name === "custom") return "custom";
     if (name === "gfx/hud/mmap/cave") return "cave";
     if (name === "gfx/tiles/ridges/cavein") return "cave";
-    if (name === 'Burrow') return "ignore";
-    if (name === 'Clam Reef') return "ignore";
+    if (name === 'burrow') return "ignore";
+    if (name === 'clamreef') return "ignore";
     return name.substring("gfx/terobjs/mm/".length);
 }
 
