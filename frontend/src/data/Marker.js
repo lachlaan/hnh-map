@@ -5,6 +5,10 @@ import * as L from "leaflet";
 function detectType(name) {
     if (name === "gfx/invobjs/small/bush" || name === "gfx/invobjs/small/bumling") return "quest";
     if (name === "custom") return "custom";
+    if (name === "gfx/hud/mmap/cave") return "cave";
+    if (name === "gfx/tiles/ridges/cavein") return "cave";
+    if (name === 'Burrow') return "ignore";
+    if (name === 'Clam Reef') return "ignore";
     return name.substring("gfx/terobjs/mm/".length);
 }
 
