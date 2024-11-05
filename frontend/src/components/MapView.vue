@@ -159,7 +159,7 @@
                     this.overlayLayer.redraw();
                     if(!this.markersHidden) {
                         this.markers.getElements().forEach(it => it.remove(this));
-                        this.markers.getElements().filter(it => it.map == this.mapid || it.map == this.overlayLayer.map).forEach(it => it.add(this));
+                        this.markers.getElements().filter(it => it.name != 'gfx/terobjs/burrow' && (it.map == this.mapid || it.map == this.overlayLayer.map)).forEach(it => it.add(this));
                     }
                 } else {
                     this.overlayLayer.map = -1;
