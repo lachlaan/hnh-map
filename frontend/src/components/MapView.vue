@@ -122,7 +122,7 @@
                 if(value) {
                     this.markers.getElements().forEach(it => it.remove(this));
                 } else {
-                    this.markers.getElements().filter(it => it.name != 'ignore' && (it.map == this.mapid || it.map == this.overlayLayer.map)).forEach(it => it.add(this));
+                    this.markers.getElements().filter(it => (it.name != 'Burrow' || it.name != 'Clam Reef' ) && (it.map == this.mapid || it.map == this.overlayLayer.map)).forEach(it => it.add(this));
                 }
                 this.markersHidden = value;
             },
