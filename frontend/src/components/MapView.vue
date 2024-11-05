@@ -122,7 +122,7 @@
                 if(value) {
                     this.markers.getElements().forEach(it => it.remove(this));
                 } else {
-                    this.markers.getElements().filter(it => (it.name != 'gfx/terobjs/mm/clamreef' || it.name != 'gfx/terobjs/mm/burrow')&& (it.map == this.mapid || it.map == this.overlayLayer.map)).forEach(it => it.add(this));
+                    this.markers.getElements().filter(it => it.name != 'ignore' && (it.map == this.mapid || it.map == this.overlayLayer.map)).forEach(it => it.add(this));
                 }
                 this.markersHidden = value;
             },
