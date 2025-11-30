@@ -63,6 +63,9 @@ func (m *Map) getMarkers(rw http.ResponseWriter, req *http.Request) {
 			if graw == nil {
 				return nil
 			}
+			if m.Name == "Clam Reef" {
+				return nil
+			}
 			g := GridData{}
 			json.Unmarshal(graw, &g)
 			markers = append(markers, FrontendMarker{
@@ -131,3 +134,4 @@ func (m *Map) config(rw http.ResponseWriter, req *http.Request) {
 	})
 	json.NewEncoder(rw).Encode(config)
 }
+
