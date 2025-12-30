@@ -7,6 +7,10 @@ function detectType(name) {
     if (name === "custom") return "custom";
     if (name === "gfx/hud/mmap/cave") return "cave";
     if (name === "gfx/tiles/ridges/cavein") return "cave";
+    if (name === "gfx/tiles/ridges/cavein2") return "cave";
+    if (name === "gfx/tiles/ridges/caveout") return "cave";
+    if (name === "gfx/terobjs/mm/burrow") return "ignore";
+    if (name === "gfx/terojbs/mm/clamreef") return "ignore";
     if (name === 'burrow') return "ignore";
     if (name === 'clamreef') return "ignore";
     return name.substring("gfx/terobjs/mm/".length);
@@ -80,3 +84,4 @@ export class Marker {
         }
     }
 }
+
